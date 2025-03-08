@@ -1,0 +1,21 @@
+{
+  "name": "@next-saas/api",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "@next-saas/auth": "workspace:*"
+  },
+  "devDependencies": {
+    "@next-saas/eslint-config": "workspace:*",
+    "@next-saas/prettier": "workspace:*",
+    "@next-saas/typescript-config": "workspace:*",
+    "@types/node": "^22.13.8",
+    "tsx": "^4.19.3"
+  },
+  "prettier": "@next-saas/prettier",
+  "eslintConfig": {
+    "extends": "@next-saas/eslint-config/node"
+  }
+}

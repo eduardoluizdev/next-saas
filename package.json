@@ -4,12 +4,19 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
   },
   "devDependencies": {
+    "@next-saas/eslint-config": "workspace:*",
+    "@next-saas/prettier": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
     "turbo": "^2.4.4"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.5.2",
   "engines": {
     "node": ">=18"
   }
